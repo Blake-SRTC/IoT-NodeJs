@@ -23,9 +23,9 @@ router.get('*', (req, res) => {
 app.use("/", router);
 
 // Iniciamos el servidor
-app.listen(5000, () => {
-    console.log("App iniciada en puerto: ", 5000);
-});
+// app.listen(5000, () => {
+//     console.log("App iniciada en puerto: ", 5000);
+// });
 
 ////////////////////////////////////////////////////////////////////////////////
 // Codigo para interactuar con arduino
