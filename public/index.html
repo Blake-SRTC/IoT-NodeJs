@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Communicationg between a Webpage and Arduino</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <h1>Comunicacion entre Web y Arduino</h1>
+
+    <button id="lightOn">Encender ON</button>
+    <button id="lightOff">Apagar OFF</button>
+
+    <div class="switch-button">
+        <!-- Checkbox -->
+        <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+        <!-- Botón -->
+        <label for="switch-label" class="switch-button__label"></label>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+<script src="./script2.js"></script>
+</html>
