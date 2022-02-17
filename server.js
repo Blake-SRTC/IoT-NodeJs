@@ -18,14 +18,23 @@ app.use("/", router);
 var io = require("socket.io").listen(server);
 
 io.on('connection', function(socket) {
+    // Nueva conexion, estado inicial RBP
+    var estado = raspberry.rbpEstado();
+    io.emit('init', {status:estado});
 
+    // Escucha
     socket.on('lights', function(data) {
-
-        arduino.port.write(data.status);
+        
         console.log(data);
-
+        // Arduino
+        arduino.port.write(data.status);
         // RBP GPIO
         raspberry.rasp(data.status);
+
+        // Tiempo real a todos los usuarios
+        estado = raspberry.rbpEstado();
+        io.emit('init', {status:estado});
+        
     });
 });
 

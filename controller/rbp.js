@@ -37,4 +37,29 @@ function rasp(status) {
     }
 }
 
+
+var estado = ['0','0','0'];
+function rbpEstado() {
+    if (LED1.readSync() === 0) {
+        estado[0] = '0';
+    } else if (LED1.readSync() === 1) {
+        estado[0] = '1';
+    }
+
+    if (LED2.readSync() === 0) {
+        estado[1] = '0';
+    } else if (LED2.readSync() === 1) {
+        estado[1] = '1';
+    }
+
+    if (LED3.readSync() === 0) {
+        estado[2] = '0';
+    } else if (LED3.readSync() === 1) {
+        estado[2] = '1';
+    }
+
+    return estado;    
+}
+
 module.exports.rasp = rasp;
+module.exports.rbpEstado = rbpEstado;
