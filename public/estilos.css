@@ -3,14 +3,7 @@ body
     margin: 0;
     padding: 0;
     background: #f3f3f3;
-}
-
-.center
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type="checkbox"]
@@ -49,4 +42,30 @@ input[type="checkbox"]::before
 input:checked[type="checkbox"]::before
 {
     left: 40px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FF9F45;
+}
+
+.contenedor div {
+    
+    width: 500px;
+    text-align: center;
+}
+
+.card {
+    width: 500px;
+    padding: 3rem;
+}
+
+.card__image {
+    max-width: 100%;
 }

@@ -5,6 +5,7 @@
     "dependencies": {
         "express": "latest",
         "onoff": "^6.0.3",
+        "raspberry-pi-camera-native": "^0.0.0",
         "serialport": "^9.0.1",
         "socket.io": "^2.0.4"
     }

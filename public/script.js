@@ -1,5 +1,5 @@
 
-window.onload = () => {
+//window.onload = () => {
 
     var socket = io();
 
@@ -47,5 +47,4 @@ window.onload = () => {
         }    
     })
 
-}
-
+//}
