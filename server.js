@@ -9,7 +9,7 @@ const raspberry = require('./controller/rbp');
 const arduino = require('./controller/arduino');
 
 // Video Stream
-const videoStream = require('./controller/videStream');
+const videoStream = require('./controller/videoStream');
 
 videoStream.acceptConnections(app, {
     width: 1280,
